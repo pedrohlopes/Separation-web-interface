@@ -126,7 +126,7 @@ var WaveformPlaylist =
 	      linkEndpoints: false,
 	      isContinuousPlay: false
 	    },
-	    isAutomaticScroll: false
+	    isAutomaticScroll: true
 	  };
 	
 	  var config = (0, _lodash2.default)({}, options, defaults);
@@ -3126,7 +3126,7 @@ var WaveformPlaylist =
 	    this.masterGain = 1;
 	    this.annotations = [];
 	    this.durationFormat = 'hh:mm:ss.uuu';
-	    this.isAutomaticScroll = false;
+	    this.isAutomaticScroll = true;
 	    this.resetDrawTimer = undefined;
 	  }
 	
@@ -6840,7 +6840,8 @@ var WaveformPlaylist =
 	      var controls = [(0, _h2.default)('div.track-header', headerChildren)];
 	
 	      if (!isCollapsed) {
-	        if (widgets.muteOrSolo) {
+			  if (widgets.muteOrSolo) {
+			  console.log(_h2.default)
 	          controls.push((0, _h2.default)('div.btn-group', [(0, _h2.default)('button.btn.btn-outline-dark.btn-xs.btn-mute' + muteClass, {
 	            attributes: {
 	              type: 'button'

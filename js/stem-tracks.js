@@ -22,14 +22,15 @@ selectElement.addEventListener('change', (event) => {
   const path = "media/audio/" + event.target.value;
   console.log("Tentando")
   playlist.clear()
+  playlist.isAutomaticScroll = true;
   playlist.load([
     {
       src: path + "_vocals_pred.wav",
-      name: event.target.value + " Vocals"
+      name: "Vocals"
     },
     {
       src: path + "_acc_pred.wav",
-      name: event.target.value + " Acc"
+      name: "Acc"
     },
   ])
 });
