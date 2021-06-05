@@ -25,11 +25,11 @@ selectElement.addEventListener('change', (event) => {
   playlist.isAutomaticScroll = true;
   playlist.load([
     {
-      src: path + "_vocals_pred.wav",
+      src: path + "_vocals_pred.mp3",
       name: "Vocals"
     },
     {
-      src: path + "_acc_pred.wav",
+      src: path + "_acc_pred.mp3",
       name: "Acc"
     },
   ])
