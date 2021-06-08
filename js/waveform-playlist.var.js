@@ -6842,14 +6842,7 @@ var WaveformPlaylist =
 	      if (!isCollapsed) {
 			  if (widgets.muteOrSolo) {
 			  console.log(_h2.default)
-	          controls.push((0, _h2.default)('div.btn-group', [(0, _h2.default)('button.btn.btn-outline-dark.btn-xs.btn-mute' + muteClass, {
-	            attributes: {
-	              type: 'button'
-	            },
-	            onclick: function onclick() {
-	              _this2.ee.emit('mute', _this2);
-	            }
-	          }, ['Mute']), (0, _h2.default)('button.btn.btn-outline-dark.btn-xs.btn-solo' + soloClass, {
+	          controls.push((0, _h2.default)('div.btn-group', [(0, _h2.default)('button.btn.btn-outline-dark.btn-xs.btn-solo' + soloClass, {
 	            onclick: function onclick() {
 	              _this2.ee.emit('solo', _this2);
 	            }
